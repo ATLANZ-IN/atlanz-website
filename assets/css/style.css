@@ -2978,7 +2978,7 @@ select {
 }
 
 .content-wrapper {
-    margin-top: 132px
+    margin-top: 85.5px
 }
 
 .breadcrumb-wrap {
@@ -6675,6 +6675,10 @@ select {
 .faq-wrap .accordion.style2 .accordion-item .accordion-header .accordion-button:not(.collapsed) {
     background: #00a9a4 !important;
     border: none
+}
+
+.single-terms h3 {
+    margin-top: 25px;
 }
 
 .accordion-item {
