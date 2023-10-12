@@ -203,7 +203,7 @@ input:checked + .slider:before {
 .theme-dark .accordion .accordion-item .accordion-header .accordion-button,
 .theme-dark .category-box.style2 ul li a span i,
 .theme-dark .page-nav li a {
-  color: #fff !important;
+  color: #00A9A4 !important;
 }
 
 .theme-dark p, .theme-dark span,

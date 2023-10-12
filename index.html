@@ -1,425 +1,671 @@
 <!DOCTYPE html>
 <html lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/remixicon.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/odometer.min.css" />
+    <link rel="stylesheet" href="assets/css/fancybox.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/dark-theme.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>Atlanz Mobility - Unlocking New Dimensions</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  </head>
+  <body>
+    <div class="loader js-preloader"></div>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <div class="switch-theme-mode">
+      <label id="switch" class="switch">
+        <input type="checkbox" onchange="toggleTheme()" id="slider" />
+        <span class="slider round"></span>
+      </label>
+    </div>
 
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/flaticon.css">
-<link rel="stylesheet" href="assets/css/remixicon.css">
-<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-<link rel="stylesheet" href="assets/css/odometer.min.css">
-<link rel="stylesheet" href="assets/css/fancybox.css">
-<link rel="stylesheet" href="assets/css/aos.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/dark-theme.css">
-<link rel="stylesheet" href="assets/css/responsive.css">
-<title>Atlanz Mobility - Unlocking New Dimensions</title>
-<link rel="icon" type="image/png" href="assets/img/favicon.png">
-</head>
-<body>
+    <div class="page-wrapper">
+      <header class="header-wrap style1">
+        <div class="header-bottom">
+          <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+              <a class="navbar-brand" href="index.html">
+                <img class="logo-light" src="assets/img/logo.png" alt="logo" />
+                <img
+                  class="logo-dark"
+                  src="assets/img/logo-white.png"
+                  alt="logo"
+                />
+              </a>
+              <div
+                class="collapse navbar-collapse main-menu-wrap"
+                id="navbarSupportedContent"
+              >
+                <div class="menu-close xl-none">
+                  <a href="javascript:void(0)">
+                    <i class="ri-close-line"></i
+                  ></a>
+                </div>
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link active"> Home </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="about.html" class="nav-link"> About Us </a>
+                  </li>
+                  <li class="nav-item has-dropdown">
+                    <a href="products.html" class="nav-link"> Products </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="blog-left-sidebar.html" class="nav-link">Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                  </li>
+                  <li class="nav-item xl-none">
+                    <a href="register.html" class="btn style1">Register Now</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
 
-<div class="loader js-preloader">
-</div>
+            <div class="mobile-bar-wrap">
+              <div class="mobile-menu xl-none">
+                <a href="javascript:void(0)"><i class="ri-menu-line"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
 
-
-<div class="switch-theme-mode">
-<label id="switch" class="switch">
-<input type="checkbox" onchange="toggleTheme()" id="slider">
-<span class="slider round"></span>
-</label>
-</div>
-
-
-<div class="page-wrapper">
-
-<header class="header-wrap style1">
-
-<div class="header-bottom">
-<div class="container">
-<nav class="navbar navbar-expand-md navbar-light">
-<a class="navbar-brand" href="index.html">
-<img class="logo-light" src="assets/img/logo.png" alt="logo">
-<img class="logo-dark" src="assets/img/logo-white.png" alt="logo">
-</a>
-<div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
-<div class="menu-close xl-none">
-<a href="javascript:void(0)"> <i class="ri-close-line"></i></a>
-</div>
-<ul class="navbar-nav ms-auto">
-<li class="nav-item  has-dropdown">
-<a href="#" class="nav-link active">
-Home
-</a>
-</li>
-<li class="nav-item">
-<a href="about.html" class="nav-link">
-About Us
-</a>
-</li>
-<li class="nav-item has-dropdown">
-<a href="products.html" class="nav-link">
-Products
-</a>
-</li>
-<li class="nav-item">
-<a href="blog-left-sidebar.html" class="nav-link">Blogs</a>
-</li>
-<li class="nav-item">
-<a href="contact.html" class="nav-link">Contact Us</a>
-</li>
-<li class="nav-item xl-none">
-<a href="register.html" class="btn style1">Register Now</a>
-</li>
-</ul>
-</div>
-</nav>
-
-<div class="mobile-bar-wrap">
-<div class="mobile-menu xl-none">
-<a href="javascript:void(0)"><i class="ri-menu-line"></i></a>
-</div>
-</div>
-</div>
-</div>
-</header>
-
-
-<section class="hero-wrap style3 bg-squeeze">
-<img src="assets/img/hero/hero-shape-10.png" alt="Image" class="hero-shape-one">
-<img src="assets/img/hero/hero-shape-15.png" alt="Image" class="hero-shape-two">
-<img src="assets/img/hero/hero-shape-14.png" alt="Image" class="hero-shape-three">
-<img src="assets/img/hero/hero-shape-11.png" alt="Image" class="hero-shape-four animationFramesTwo">
-<div class="hero-slider-one owl-carousel">
-<div class="hero-slide-item">
-<div class="container">
-<div class="row gx-5 align-items-center">
-<div class="col-md-6">
-<div class="hero-content" data-speed="0.10" data-revert="true">
-<span>The Growing World led to </span>
-<h1>The Growing Traffic Everyday</h1>
-<p>As the world population continues to grow and urban areas expand, the increase in traffic volume becomes inevitable. This growing traffic poses challenges such as congestion, longer commuting times, and increased environmental pollution, highlighting the need for effective transportation solutions and infrastructure planning to address these issues.</p>
-<!--<div class="hero-btn">
+      <section class="hero-wrap style3 bg-squeeze">
+        <img
+          src="assets/img/hero/hero-shape-10.png"
+          alt="Image"
+          class="hero-shape-one"
+        />
+        <img
+          src="assets/img/hero/hero-shape-15.png"
+          alt="Image"
+          class="hero-shape-two"
+        />
+        <img
+          src="assets/img/hero/hero-shape-14.png"
+          alt="Image"
+          class="hero-shape-three"
+        />
+        <img
+          src="assets/img/hero/hero-shape-11.png"
+          alt="Image"
+          class="hero-shape-four animationFramesTwo"
+        />
+        <div class="hero-slider-one owl-carousel">
+          <div class="hero-slide-item">
+            <div class="container">
+              <div class="row gx-5 align-items-center">
+                <div class="col-md-6">
+                  <div
+                    class="hero-content"
+                    data-speed="0.10"
+                    data-revert="true"
+                  >
+                    <span>The Growing World led to </span>
+                    <h1>The Growing Traffic Everyday</h1>
+                    <p>
+                      As the world population continues to grow and urban areas
+                      expand, the increase in traffic volume becomes inevitable.
+                      This growing traffic poses challenges such as congestion,
+                      longer commuting times, and increased environmental
+                      pollution, highlighting the need for effective
+                      transportation solutions and infrastructure planning to
+                      address these issues.
+                    </p>
+                    <!--<div class="hero-btn">
 <a href="service-one.html" class="btn style1">Get Started</a>
 <a class="play-video" data-fancybox href="https://www.youtube.com/watch?v=DGo-OhDWIKQ">
 <span class="play-btn"> <i class="flaticon-play-button-arrowhead"></i></span>
 <span class="sm-none">Watch Video</span>
 </a>
 </div>-->
-</div>
-</div>
-<div class="col-md-6">
-<div class="hero-img-wrap">
-<img src="assets/img/hero/hero-shape-13.png" alt="Image" class="hero-shape-five bounce">
-<img src="assets/img/hero/hero-shape-12.png" alt="Image" class="hero-shape-six moveHorizontal">
-<img src="assets/img/hero/land-8.png" alt="Image" class="hero-img">
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="hero-slide-item">
-<div class="container">
-<div class="row gx-5 align-items-center">
-<div class="col-md-6">
-<div class="hero-content" data-speed="0.10" data-revert="true">
-<span>The Solution ?</span>
-<h1>Intelligent Transportation System</h1>
-<p>ITS can resolve transportation problems by improving traffic flow, enhancing road safety, and reducing travel time. By optimizing routes, providing real-time information, and integrating different modes of transportation, ITS creates a more efficient and sustainable transportation system.</p>
-</div>
-</div>
-<div class="col-md-6">
-<div class="hero-img-wrap">
-<img src="assets/img/hero/hero-shape-13.png" alt="Image" class="hero-shape-five bounce">
-<img src="assets/img/hero/hero-shape-12.png" alt="Image" class="hero-shape-six moveHorizontal">
-<img src="assets/img/hero/land-6.png" alt="Image" class="hero-img">
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="hero-slide-item">
-<div class="container">
-<div class="row gx-5 align-items-center">
-<div class="col-md-6">
-<div class="hero-content" data-speed="0.10" data-revert="true">
-<span>Global Transportation Solution</span>
-<h1>Move Your Vehicles In Easy Secured Ways</h1>
-<p>Unlock the potential of a global transportation solution that enables easy and secure movement of vehicles. With our comprehensive system, you can navigate diverse terrains and transportation networks, ensuring efficient and safe logistics and effective management.</p>
-</div>
-</div>
-<div class="col-md-6">
-<div class="hero-img-wrap">
-<img src="assets/img/hero/hero-shape-13.png" alt="Image" class="hero-shape-five bounce">
-<img src="assets/img/hero/hero-shape-12.png" alt="Image" class="hero-shape-six moveHorizontal">
-<img src="assets/img/hero/land-5.png" alt="Image" class="hero-img">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="hero-img-wrap">
+                    <img
+                      src="assets/img/hero/hero-shape-13.png"
+                      alt="Image"
+                      class="hero-shape-five bounce"
+                    />
+                    <img
+                      src="assets/img/hero/hero-shape-12.png"
+                      alt="Image"
+                      class="hero-shape-six moveHorizontal"
+                    />
+                    <img
+                      src="assets/img/hero/land-8.png"
+                      alt="Image"
+                      class="hero-img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-slide-item">
+            <div class="container">
+              <div class="row gx-5 align-items-center">
+                <div class="col-md-6">
+                  <div
+                    class="hero-content"
+                    data-speed="0.10"
+                    data-revert="true"
+                  >
+                    <span>The Solution ?</span>
+                    <h1>Intelligent Transportation System</h1>
+                    <p>
+                      ITS can resolve transportation problems by improving
+                      traffic flow, enhancing road safety, and reducing travel
+                      time. By optimizing routes, providing real-time
+                      information, and integrating different modes of
+                      transportation, ITS creates a more efficient and
+                      sustainable transportation system.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="hero-img-wrap">
+                    <img
+                      src="assets/img/hero/hero-shape-13.png"
+                      alt="Image"
+                      class="hero-shape-five bounce"
+                    />
+                    <img
+                      src="assets/img/hero/hero-shape-12.png"
+                      alt="Image"
+                      class="hero-shape-six moveHorizontal"
+                    />
+                    <img
+                      src="assets/img/hero/land-6.png"
+                      alt="Image"
+                      class="hero-img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-slide-item">
+            <div class="container">
+              <div class="row gx-5 align-items-center">
+                <div class="col-md-6">
+                  <div
+                    class="hero-content"
+                    data-speed="0.10"
+                    data-revert="true"
+                  >
+                    <span>Global Transportation Solution</span>
+                    <h1>Move Your Vehicles In Easy Secured Ways</h1>
+                    <p>
+                      Unlock the potential of a global transportation solution
+                      that enables easy and secure movement of vehicles. With
+                      our comprehensive system, you can navigate diverse
+                      terrains and transportation networks, ensuring efficient
+                      and safe logistics and effective management.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="hero-img-wrap">
+                    <img
+                      src="assets/img/hero/hero-shape-13.png"
+                      alt="Image"
+                      class="hero-shape-five bounce"
+                    />
+                    <img
+                      src="assets/img/hero/hero-shape-12.png"
+                      alt="Image"
+                      class="hero-shape-six moveHorizontal"
+                    />
+                    <img
+                      src="assets/img/hero/land-5.png"
+                      alt="Image"
+                      class="hero-img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="feature-wrap pt-100 pb-75">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <div class="feature-card style3">
+                <div class="feature-info">
+                  <div class="feature-title">
+                    <span
+                      ><img
+                        src="assets/img/feature/feature-icon-1.png"
+                        alt="Image"
+                    /></span>
+                    <h3>Watch Your City Traffic</h3>
+                  </div>
+                  <p>
+                    Stay updated on the traffic conditions in your city with our
+                    advanced traffic monitoring system. Our intelligent
+                    transportation solution allows you to watch the real-time
+                    traffic flow, identify congestion points, and make informed
+                    decisions for your commute.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <div class="feature-card style3">
+                <div class="feature-info">
+                  <div class="feature-title">
+                    <span
+                      ><img
+                        src="assets/img/feature/feature-icon-2.png"
+                        alt="Image"
+                    /></span>
+                    <h3>Know Your Journey Better</h3>
+                  </div>
+                  <p>
+                    Experience a better journey with our intelligent
+                    transportation system. Get accurate and timely information
+                    about routes, estimated travel times, and alternative
+                    options. Plan your trips more efficiently, avoid delays, and
+                    reach your destination with ease.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <div class="feature-card style3">
+                <div class="feature-info">
+                  <div class="feature-title">
+                    <span
+                      ><img
+                        src="assets/img/feature/feature-icon-3.png"
+                        alt="Image"
+                    /></span>
+                    <h3>Find the Hidden Facts</h3>
+                  </div>
+                  <p>
+                    Uncover the hidden facts about your transportation patterns
+                    and trends with our data-driven insights. Our intelligent
+                    transportation system collects and analyzes data to provide
+                    valuable information about traffic volume, peak hours, and
+                    other factors influencing your travel experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="why-choose-wrap style1 pb-100 bg-bunting">
+        <div class="container">
+          <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="wh-img-wrap">
+                <img src="assets/img/why-choose-us/LAND-9.png" alt="Image" />
+                <img
+                  class="wh-shape-one bounce"
+                  src="assets/img/why-choose-us/wh-shape-1.png"
+                  alt="Image"
+                />
+                <img
+                  class="wh-shape-two animationFramesTwo"
+                  src="assets/img/why-choose-us/wh-shape-2.png"
+                  alt="Image"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="wh-content">
+                <div class="content-title style1">
+                  <span>Know ITS Better</span>
+                  <h2>Lots can be resolved with ITS</h2>
+                  <p>
+                    Deploying Intelligent Transportation Systems (ITS) can help
+                    resolve various transportation-related problems. Some of the
+                    key problems that can be addressed by implementing ITS
+                    include:
+                  </p>
+                </div>
+                <div class="feature-item-wrap">
+                  <div class="feature-item">
+                    <ul class="content-feature-list list-style mb-0">
+                      <li>
+                        <i class="ri-checkbox-multiple-line"></i>
+                        <h5>Traffic Congestion</h5>
+                        ITS optimizes traffic flow, implements intelligent
+                        traffic signal systems, and provides real-time
+                        information to alleviate traffic congestion.
+                      </li>
+                      <li>
+                        <i class="ri-checkbox-multiple-line"></i>
+                        <h5>Road Safety</h5>
+                        ITS enhances road safety through real-time incident
+                        detection, automated incident management, and emergency
+                        response systems.
+                      </li>
+                      <li>
+                        <i class="ri-checkbox-multiple-line"></i>
+                        <h5>Travel Time Reliability</h5>
+                        ITS improves travel time reliability by offering dynamic
+                        route guidance and adaptive traffic control systems.
+                      </li>
+                      <li>
+                        <i class="ri-checkbox-multiple-line"></i>
+                        <h5>Environmental Impact</h5>
+                        ITS reduces environmental impact by minimizing
+                        congestion, fuel consumption, and emissions.
+                      </li>
+                      <li>
+                        <i class="ri-checkbox-multiple-line"></i>
+                        <h5>Transportation Efficiency</h5>
+                        ITS enhances transportation efficiency by integrating
+                        different modes of transportation and creating a
+                        seamless network.
+                      </li>
+                      <li>
+                        <i class="ri-checkbox-multiple-line"></i>
+                        <h5>Parking Management</h5>
+                        ITS assists in efficient parking management through
+                        real-time information and smart parking systems,
+                        reducing parking search time and improving space
+                        utilization.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <div class="counter-wrap">
+        <div class="container">
+          <div class="counter-card-wrap">
+            <div class="counter-card">
+              <div class="counter-text">
+                <div class="counter-num">
+                  <span class="odometer" data-count="10"></span>
+                </div>
+                <p>Cities Covered</p>
+              </div>
+            </div>
+            <div class="counter-card">
+              <div class="counter-text">
+                <div class="counter-num">
+                  <span class="odometer" data-count="134"></span>
+                </div>
+                <p>Junctions Covered</p>
+              </div>
+            </div>
+            <div class="counter-card">
+              <div class="counter-text">
+                <div class="counter-num">
+                  <span class="odometer" data-count="2597"></span>
+                </div>
+                <p>Accidents Identified</p>
+              </div>
+            </div>
+            <div class="counter-card">
+              <div class="counter-text">
+                <div class="counter-num">
+                  <span class="odometer" data-count="100467"></span>
+                </div>
+                <p>Vehicles Identified</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <section class="service-wrap style3 ptb-100 bg-rock">
+        <div class="container">
+          <img
+            src="assets/img/service-shape-1.png"
+            alt="Image"
+            class="service-shape-one"
+          />
+          <img
+            src="assets/img/service-shape-2.png"
+            alt="Image"
+            class="service-shape-two"
+          />
+          <div class="section-title style1 text-center mb-40">
+            <span>What We Provide</span>
+            <h2 class="text-white">Get Your Atlanz Transportation Solution</h2>
+          </div>
+          <div class="row gx-5 align-items-center">
+            <div class="col-md-6">
+              <div class="service-card style3">
+                <span class="service-icon">
+                  <i class="flaticon-payment-method"></i>
+                </span>
+                <div class="service-info">
+                  <h3><a href="#">Our Services</a></h3>
+                  <p>
+                    Discover the convenience of Emerald, our mobile service
+                    bringing transportation solutions to your fingertips.
+                    Experience Tesseract, our powerful cloud-based data
+                    analytics app, for in-depth insights and better
+                    decision-making.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-card style3">
+                <span class="service-icon">
+                  <i class="flaticon-credit-card"></i>
+                </span>
+                <div class="service-info">
+                  <h3><a href="#">Our Expertise</a></h3>
+                  <p>
+                    Our exceptional team of experienced Professors, AI
+                    engineers, and data scientists collaborate to deliver
+                    flawless and accurate solutions. With deep expertise and
+                    innovative approaches, we exceed expectations and drive
+                    tangible results for your projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-card style3">
+                <span class="service-icon">
+                  <i class="flaticon-computer"></i>
+                </span>
+                <div class="service-info">
+                  <h3><a href="#">Real Time Analytics & Solutions</a></h3>
+                  <p>
+                    By harnessing cutting-edge technologies and data processing
+                    techniques, we enable organizations identify trends, detect
+                    anomalies, and implement agile solutions to optimize
+                    operations, enhance customer experiences, and drive business
+                    growth.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-card style3">
+                <span class="service-icon">
+                  <i class="flaticon-loan-1"></i>
+                </span>
+                <div class="service-info">
+                  <h3><a href="#">State of Art Technolgy</a></h3>
+                  <p>
+                    Our solutions leverage state-of-the-art technology,
+                    including advanced algorithms, machine learning, and
+                    data-driven insights, to deliver high-performance and secure
+                    results. We ensure that our clients receive exceptional
+                    solutions to stay ahead in the industry.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section class="feature-wrap pt-100 pb-75">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-xl-4 col-lg-6 col-md-6">
-<div class="feature-card style3">
-<div class="feature-info">
-<div class="feature-title">
-<span><img src="assets/img/feature/feature-icon-1.png" alt="Image"></span>
-<h3>Watch Your City Traffic</h3>
-</div>
-<p>Stay updated on the traffic conditions in your city with our advanced traffic monitoring system. Our intelligent transportation solution allows you to watch the real-time traffic flow, identify congestion points, and make informed decisions for your commute.</p>
-</div>
-</div>
-</div>
-<div class="col-xl-4 col-lg-6 col-md-6">
-<div class="feature-card style3">
-<div class="feature-info">
-<div class="feature-title">
-<span><img src="assets/img/feature/feature-icon-2.png" alt="Image"></span>
-<h3>Know Your Journey Better</h3>
-</div>
-<p>Experience a better journey with our intelligent transportation system. Get accurate and timely information about routes, estimated travel times, and alternative options. Plan your trips more efficiently, avoid delays, and reach your destination with ease.</p>
-</div>
-</div>
-</div>
-<div class="col-xl-4 col-lg-6 col-md-6">
-<div class="feature-card style3">
-<div class="feature-info">
-<div class="feature-title">
-<span><img src="assets/img/feature/feature-icon-3.png" alt="Image"></span>
-<h3>Find the Hidden Facts</h3>
-</div>
-<p>Uncover the hidden facts about your transportation patterns and trends with our data-driven insights. Our intelligent transportation system collects and analyzes data to provide valuable information about traffic volume, peak hours, and other factors influencing your travel experience.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+      <section class="goal-wrap ptb-100">
+        <div class="container">
+          <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="goal-img-wrap">
+                <img
+                  src="assets/img/goal/goal-shape-1.png"
+                  alt="Image"
+                  class="goal-shape-three bounce"
+                />
+                <img
+                  src="assets/img/goal/goal-shape-2.png"
+                  alt="Image"
+                  class="goal-shape-one"
+                />
+                <img
+                  src="assets/img/goal/goal-shape-3.png"
+                  alt="Image"
+                  class="goal-shape-two"
+                />
+                <img src="assets/img/project/project-2.jpg" alt="Image" />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="goal-content">
+                <div class="content-title style1">
+                  <span>Mobile App</span>
+                  <h2>Emerald</h2>
+                  <p>
+                    The Emerald mobile app provides free access to a range of
+                    features, although some limitations apply. With Emerald, you
+                    can benefit from real-time traffic monitoring, ensuring
+                    smoother navigation. The app supports GPS functionality for
+                    accurate location tracking and guidance. Additionally, an AI
+                    chatbot is available to assist you with personalized
+                    recommendations and queries.
+                  </p>
+                </div>
+                <div class="purchase-pricing">
+                  <a href="service-two.html" class="btn style1">Know More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="goal-wrap ptb-100">
+        <div class="container">
+          <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="goal-content">
+                <div class="content-title style1">
+                  <span>Desktop App</span>
+                  <h2>Tesseract</h2>
+                  <p>
+                    Tesseract is a powerful desktop application offering
+                    advanced capabilities. With Tesseract, you can leverage
+                    cloud-based data analytics, enabling you to gain in-depth
+                    insights for better decision-making. The app efficiently
+                    utilizes cloud computing resources, optimizing performance.
+                    The pricing structure is flexible, based on the usage time
+                    of cloud computing services. Comprehensive documentation and
+                    customer support are provided to ensure a smooth integration
+                    and usage experience.
+                  </p>
+                </div>
+                <div class="purchase-pricing">
+                  <a href="service-one.html" class="btn style1">Know More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="goal-img-wrap">
+                <img
+                  src="assets/img/goal/goal-shape-1.png"
+                  alt="Image"
+                  class="goal-shape-three bounce"
+                />
+                <img
+                  src="assets/img/goal/goal-shape-2.png"
+                  alt="Image"
+                  class="goal-shape-one"
+                />
+                <img
+                  src="assets/img/goal/goal-shape-3.png"
+                  alt="Image"
+                  class="goal-shape-two"
+                />
+                <img src="assets/img/project/project-5.jpg" alt="Image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section class="why-choose-wrap style1 pb-100 bg-bunting">
-<div class="container">
-<div class="row gx-5 align-items-center">
-<div class="col-lg-6">
-<div class="wh-img-wrap">
-<img src="assets/img/why-choose-us/LAND-9.png" alt="Image">
-<img class="wh-shape-one bounce" src="assets/img/why-choose-us/wh-shape-1.png" alt="Image">
-<img class="wh-shape-two animationFramesTwo" src="assets/img/why-choose-us/wh-shape-2.png" alt="Image">
-</div>
-</div>
-<div class="col-lg-6">
-<div class="wh-content">
-<div class="content-title style1">
-<span>Know ITS Better</span>
-<h2>Lots can be resolved with ITS</h2>
-<p>Deploying Intelligent Transportation Systems (ITS) can help resolve various transportation-related problems. Some of the key problems that can be addressed by implementing ITS include:</p>
-</div>
-<div class="feature-item-wrap">
-<div class="feature-item">
-<ul class="content-feature-list  list-style mb-0">
-<li><i class="ri-checkbox-multiple-line"></i><h5>Traffic Congestion</h5>ITS optimizes traffic flow, implements intelligent traffic signal systems, and provides real-time information to alleviate traffic congestion.</li>
-<li><i class="ri-checkbox-multiple-line"></i><h5>Road Safety</h5>ITS enhances road safety through real-time incident detection, automated incident management, and emergency response systems.</li>
-<li><i class="ri-checkbox-multiple-line"></i><h5>Travel Time Reliability</h5>ITS improves travel time reliability by offering dynamic route guidance and adaptive traffic control systems.</li>
-<li><i class="ri-checkbox-multiple-line"></i><h5>Environmental Impact</h5>ITS reduces environmental impact by minimizing congestion, fuel consumption, and emissions.</li>
-<li><i class="ri-checkbox-multiple-line"></i><h5>Transportation Efficiency</h5>ITS enhances transportation efficiency by integrating different modes of transportation and creating a seamless network.</li>
-<li><i class="ri-checkbox-multiple-line"></i><h5>Parking Management</h5>ITS assists in efficient parking management through real-time information and smart parking systems, reducing parking search time and improving space utilization.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+      <section class="shopping-wrap ptb-100">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-12 order-lg-1 order-2">
+              <div class="shopping-content">
+                <img
+                  src="assets/img/shopping/shopping-shape-1.png"
+                  alt="Image"
+                  class="shopping-shape-one moveHorizontal"
+                />
+                <img
+                  src="assets/img/shopping/shopping-shape-2.png"
+                  alt="Image"
+                  class="shopping-shape-two bounce"
+                />
+                <div class="content-title style1">
+                  <h2>Get Atlanz Mobility Today</h2>
+                  <p>
+                    At Atlanz Mobility, our customers are at the heart of
+                    everything we do. We prioritize your satisfaction and strive
+                    to provide exceptional service. Our dedicated team is always
+                    available to assist you, address your inquiries, and ensure
+                    a positive experience. We value your feedback and
+                    continuously work towards improving our offerings based on
+                    your needs. Trust, transparency, and integrity are the
+                    pillars of our customer relationships. Thank you for
+                    choosing us, and we are committed to delivering excellence
+                    every step of the way.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 order-lg-2 order-1">
+              <div class="shopping-img-wrap">
+                <img src="assets/img/shopping/ltd-12.png" alt="Image" />
+                <img
+                  src="assets/img/shopping/shopping-shape-3.png"
+                  alt="Image"
+                  class="shopping-shape-three"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-
-<div class="counter-wrap">
-<div class="container">
-<div class="counter-card-wrap">
-<div class="counter-card">
-<div class="counter-text">
-<div class="counter-num">
-<span class="odometer" data-count="10"></span>
-</div>
-<p>Cities Covered</p>
-</div>
-</div>
-<div class="counter-card">
-<div class="counter-text">
-<div class="counter-num">
-<span class="odometer" data-count="134"></span>
-</div>
-<p>Junctions Covered</p>
-</div>
-</div>
-<div class="counter-card">
-<div class="counter-text">
-<div class="counter-num">
-<span class="odometer" data-count="2597"></span>
-</div>
-<p>Accidents Identified</p>
-</div>
-</div>
-<div class="counter-card">
-<div class="counter-text">
-<div class="counter-num">
-<span class="odometer" data-count="100467"></span>
-</div>
-<p>Vehicles Identified</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-
- 
-<section class="service-wrap style3 ptb-100 bg-rock">
-<div class="container">
-<img src="assets/img/service-shape-1.png" alt="Image" class="service-shape-one">
-<img src="assets/img/service-shape-2.png" alt="Image" class="service-shape-two">
-<div class="section-title style1 text-center mb-40">
-<span>What We Provide</span>
-<h2 class="text-white">Get Your Atlanz Transportation Solution</h2>
-</div>
-<div class="row gx-5 align-items-center">
-<div class="col-md-6">
-<div class="service-card style3">
-<span class="service-icon">
-<i class="flaticon-payment-method"></i>
-</span>
-<div class="service-info">
-<h3><a href="#">Our Services</a></h3>
-<p>Discover the convenience of Emerald, our mobile service bringing transportation solutions to your fingertips. Experience Tesseract, our powerful cloud-based data analytics app, for in-depth insights and better decision-making.</p>
-</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="service-card style3">
-<span class="service-icon">
-<i class="flaticon-credit-card"></i>
-</span>
-<div class="service-info">
-<h3><a href="#">Our Expertise</a></h3>
-<p>Our exceptional team of experienced Professors, AI engineers, and data scientists collaborate to deliver flawless and accurate solutions. With deep expertise and innovative approaches, we exceed expectations and drive tangible results for your projects.</p>
-</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="service-card style3">
-<span class="service-icon">
-<i class="flaticon-computer"></i>
-</span>
-<div class="service-info">
-<h3><a href="#">Real Time Analytics & Solutions</a></h3>
-<p>By harnessing cutting-edge technologies and data processing techniques, we enable organizations identify trends, detect anomalies, and implement agile solutions to optimize operations, enhance customer experiences, and drive business growth.</p>
-</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="service-card style3">
-<span class="service-icon">
-<i class="flaticon-loan-1"></i>
-</span>
-<div class="service-info">
-<h3><a href="#">State of Art Technolgy</a></h3>
-<p>Our solutions leverage state-of-the-art technology, including advanced algorithms, machine learning, and data-driven insights, to deliver high-performance and secure results. We ensure that our clients receive exceptional solutions to stay ahead in the 
-industry.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section class="goal-wrap ptb-100">
-<div class="container">
-<div class="row gx-5 align-items-center">
-<div class="col-lg-6">
-<div class="goal-img-wrap">
-<img src="assets/img/goal/goal-shape-1.png" alt="Image" class="goal-shape-three bounce">
-<img src="assets/img/goal/goal-shape-2.png" alt="Image" class="goal-shape-one">
-<img src="assets/img/goal/goal-shape-3.png" alt="Image" class="goal-shape-two">
-<img src="assets/img/project/project-2.jpg" alt="Image">
-</div>
-</div>
-<div class="col-lg-6">
-<div class="goal-content">
-<div class="content-title style1">
-<span>Mobile App</span>
-<h2>Emerald</h2>
-<p>The Emerald mobile app provides free access to a range of features, although some limitations apply. With Emerald, you can benefit from real-time traffic monitoring, ensuring smoother navigation. The app supports GPS functionality for accurate location tracking and guidance. Additionally, an AI chatbot is available to assist you with personalized recommendations and queries.</p>
-</div>
-<div class="purchase-pricing">
-<a href="service-two.html" class="btn style1">Know More</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section class="goal-wrap ptb-100">
-<div class="container">
-<div class="row gx-5 align-items-center">
-<div class="col-lg-6">
-<div class="goal-content">
-<div class="content-title style1">
-<span>Desktop App</span>
-<h2>Tesseract</h2>
-<p>Tesseract is a powerful desktop application offering advanced capabilities. With Tesseract, you can leverage cloud-based data analytics, enabling you to gain in-depth insights for better decision-making. The app efficiently utilizes cloud computing resources, optimizing performance. The pricing structure is flexible, based on the usage time of cloud computing services. Comprehensive documentation and customer support are provided to ensure a smooth integration and usage experience.</p>
-</div>
-<div class="purchase-pricing">
-<a href="service-one.html" class="btn style1">Know More</a>
-</div>
-</div>
-</div>
-<div class="col-lg-6">
-<div class="goal-img-wrap">
-<img src="assets/img/goal/goal-shape-1.png" alt="Image" class="goal-shape-three bounce">
-<img src="assets/img/goal/goal-shape-2.png" alt="Image" class="goal-shape-one">
-<img src="assets/img/goal/goal-shape-3.png" alt="Image" class="goal-shape-two">
-<img src="assets/img/project/project-5.jpg" alt="Image">
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section class="shopping-wrap ptb-100">
-<div class="container">
-<div class="row align-items-center">
-<div class="col-lg-6 col-12 order-lg-1 order-2">
-<div class="shopping-content">
-<img src="assets/img/shopping/shopping-shape-1.png" alt="Image" class="shopping-shape-one moveHorizontal">
-<img src="assets/img/shopping/shopping-shape-2.png" alt="Image" class="shopping-shape-two bounce">
-<div class="content-title style1 ">
-<h2>Get Atlanz Mobility Today</h2>
-<p>At Atlanz Mobility, our customers are at the heart of everything we do. We prioritize your satisfaction and strive to provide exceptional service. Our dedicated team is always available to assist you, address your inquiries, and ensure a positive experience. We value your feedback and continuously work towards improving our offerings based on your needs. Trust, transparency, and integrity are the pillars of our customer relationships. Thank you for choosing us, and we are committed to delivering excellence every step of the way.</p>
-</div>
-</div>
-</div>
-<div class="col-lg-6 col-12 order-lg-2 order-1">
-<div class="shopping-img-wrap">
-<img src="assets/img/shopping/ltd-12.png" alt="Image">
-<img src="assets/img/shopping/shopping-shape-3.png" alt="Image" class="shopping-shape-three">
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!--
+      <!--
 <section class="testimonial-wrap ptb-100  bg-albastor">
 <div class="container">
 <div class="row">
@@ -521,226 +767,276 @@ industry.</p>
 </section>
 -->
 
-<section class="app-wrap  ptb-100 bg-rock">
-<div class="container">
-<div class="row align-items-center">
-<div class="col-lg-7 col-md-8">
-<div class="app-content sm-center">
-<div class="content-title style2">
-<h2>You Can Find All Things You Need In Our App</h2>
-</div>
-</div>
-</div>
-<div class="col-lg-5 col-md-4 text-md-end sm-center">
-<div class="app-btn">
-<a href="https://play.google.com/store/apps"><img src="assets/img/play-store.png" alt="Image"></a>
-<a href="https://www.apple.com/app-store/"><img src="assets/img/apple-store.png" alt="Image"></a>
-</div>
-</div>
-</div>
-</div>
-</section>
+      <section class="app-wrap ptb-100 bg-rock">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7 col-md-8">
+              <div class="app-content sm-center">
+                <div class="content-title style2">
+                  <h2>You Can Find All Things You Need In Our App</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-4 text-md-end sm-center">
+              <div class="app-btn">
+                <a href="https://play.google.com/store/apps"
+                  ><img src="assets/img/play-store.png" alt="Image"
+                /></a>
+                <a href="https://www.apple.com/app-store/"
+                  ><img src="assets/img/apple-store.png" alt="Image"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section class="blog-wrap pt-100 pb-75 bg-albastor">
-<div class="container">
-<div class="section-title style1 text-center mb-40">
-<span>Latest Insights From Experts</span>
-<h2>Our Latest Articles</h2>
-</div>
-<div class="row justify-content-center">
-<div class="col-xl-4 col-lg-6 col-md-6">
-<div class="blog-card style1">
-<div class="blog-img">
-<img src="assets/img/blog/blog-1.jpg" alt="Image">
-</div>
-<div class="blog-info">
-<ul class="blog-metainfo  list-style">
-<li><i class="flaticon-user"></i> <a href="posts-by-author.html">Dr. Shriniwas S. Arkatkar</a></li>
-<li><i class="flaticon-calendar"></i>05 May, 2023</li>
-</ul>
-<h3><a href="blog-1.html">Exploring the Power of Intelligent Transportation Systems</a></h3>
-<a href="blog-1.html" class="link style1">Read More
-<i class="flaticon-right-arrow"></i>
-</a>
-</div>
-</div>
-</div>
-<div class="col-xl-4 col-lg-6 col-md-6">
-<div class="blog-card style1">
-<div class="blog-img">
-<img src="assets/img/blog/blog-2.jpg" alt="Image">
-</div>
-<div class="blog-info">
-<ul class="blog-metainfo  list-style">
-<li><i class="flaticon-user"></i> <a href="posts-by-author.html">Atif Shaikh</a></li>
-<li><i class="flaticon-calendar"></i>10 May, 2023</li>
-</ul>
-<h3><a href="blog-2.html">Building Smarter Cities with Intelligent Transportation Systems</a></h3>
-<a href="blog-2.html" class="link style1">Read More
-<i class="flaticon-right-arrow"></i>
-</a>
-</div>
-</div>
-</div>
-<div class="col-xl-4 col-lg-6 col-md-6">
-<div class="blog-card style1">
-<div class="blog-img">
-<img src="assets/img/blog/blog-8.jpg" alt="Image">
-</div>
-<div class="blog-info">
-<ul class="blog-metainfo  list-style">
-<li><i class="flaticon-user"></i><a href="posts-by-author.html">Mihir Gandhi</a></li>
-<li><i class="flaticon-calendar"></i>15 May, 2023</li>
-</ul>
-<h3><a href="blog-3.html">The Future of Intelligent Transportation Systems: Trends and Innovations</a></h3>
-<a href="blog-3.html" class="link style1">Read More
-<i class="flaticon-right-arrow"></i>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+      <section class="blog-wrap pt-100 pb-75 bg-albastor">
+        <div class="container">
+          <div class="section-title style1 text-center mb-40">
+            <span>Latest Insights From Experts</span>
+            <h2>Our Latest Articles</h2>
+          </div>
+          <div class="row justify-content-center">
+            <div class="abc0 col-xl-4 col-lg-6 col-md-6">
+              <div class="blog-card style1">
+                <div class="blog-img">
+                  <img src="assets/img/blog/blog-1.jpg" alt="Image" />
+                </div>
+                <div class="blog-info">
+                  <ul class="blog-metainfo list-style">
+                    <li>
+                      <i class="flaticon-user"></i>
+                      <a href="posts-by-author.html"
+                        >Dr. Shriniwas S. Arkatkar</a
+                      >
+                    </li>
+                    <li><i class="flaticon-calendar"></i>05 May, 2023</li>
+                  </ul>
+                  <h3>
+                    <a href="blog-1.html"
+                      >Exploring the Power of Intelligent Transportation
+                      Systems</a
+                    >
+                  </h3>
+                  <a href="blog-1.html" class="link style1"
+                    >Read More
+                    <i class="flaticon-right-arrow"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="abc0 col-xl-4 col-lg-6 col-md-6">
+              <div class="blog-card style1">
+                <div class="blog-img">
+                  <img src="assets/img/blog/blog-2.jpg" alt="Image" />
+                </div>
+                <div class="blog-info">
+                  <ul class="blog-metainfo list-style">
+                    <li>
+                      <i class="flaticon-user"></i>
+                      <a href="posts-by-author.html">Atif Shaikh</a>
+                    </li>
+                    <li><i class="flaticon-calendar"></i>10 May, 2023</li>
+                  </ul>
+                  <h3>
+                    <a href="blog-2.html"
+                      >Building Smarter Cities with Intelligent Transportation
+                      Systems</a
+                    >
+                  </h3>
+                  <a href="blog-2.html" class="link style1"
+                    >Read More
+                    <i class="flaticon-right-arrow"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="abc0 col-xl-4 col-lg-6 col-md-6">
+              <div class="blog-card style1">
+                <div class="blog-img">
+                  <img src="assets/img/blog/blog-8.jpg" alt="Image" />
+                </div>
+                <div class="blog-info">
+                  <ul class="blog-metainfo list-style">
+                    <li>
+                      <i class="flaticon-user"></i
+                      ><a href="posts-by-author.html">Mihir Gandhi</a>
+                    </li>
+                    <li><i class="flaticon-calendar"></i>15 May, 2023</li>
+                  </ul>
+                  <h3>
+                    <a href="blog-3.html"
+                      >The Future of Intelligent Transportation Systems: Trends
+                      and Innovations</a
+                    >
+                  </h3>
+                  <a href="blog-3.html" class="link style1"
+                    >Read More
+                    <i class="flaticon-right-arrow"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <footer class="footer-wrap bg-rock">
+        <div class="container">
+          <img
+            src="assets/img/footer-shape-1.png"
+            alt="Image"
+            class="footer-shape-one"
+          />
+          <img
+            src="assets/img/footer-shape-2.png"
+            alt="Image"
+            class="footer-shape-two"
+          />
+          <div class="row pt-100 pb-75">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+              <div class="footer-widget">
+                <a href="index.html" class="footer-logo">
+                  <img src="assets/img/logo-white.png" alt="Image" />
+                </a>
+                <p class="comp-desc">Unlocking New Dimensions</p>
+                <p class="comp-desc">
+                  Transforming transportation with intelligent solutions for
+                  enhanced efficiency, safety, and sustainability.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div class="footer-widget">
+                <h3 class="footer-widget-title">Our Company</h3>
+                <ul class="footer-menu list-style">
+                  <li>
+                    <a href="team.html">
+                      <i class="flaticon-next"></i>
+                      Company &amp; Team
+                    </a>
+                  </li>
+                  <li>
+                    <a href="service-one.html">
+                      <i class="flaticon-next"></i>
+                      Our Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="contact.html">
+                      <i class="flaticon-next"></i>
+                      Contact Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="privacy-policy.html">
+                      <i class="flaticon-next"></i>
+                      Privacy Policy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+              <div class="footer-widget">
+                <h3 class="footer-widget-title">Support</h3>
+                <ul class="footer-menu list-style">
+                  <li>
+                    <a href="faq.html">
+                      <i class="flaticon-next"></i>
+                      FAQ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="terms-of-service.html">
+                      <i class="flaticon-next"></i>
+                      Terms
+                    </a>
+                  </li>
+                  <li>
+                    <a href="privacy-policy.html">
+                      <i class="flaticon-next"></i>
+                      Privacy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div class="footer-widget">
+                <h3 class="footer-widget-title">Contact Us</h3>
+                <ul class="footer-menu list-style">
+                  <li>
+                    <a href="contact.html">
+                      <i class="flaticon-next"></i>
+                      Email Us:
+                      <a href="mailto:example@example.com">info@atlanz.com</a>
+                    </a>
+                  </li>
+                </ul>
+                <br />
+                <div class="social-link">
+                  <ul class="social-profile list-style style1">
+                    <li>
+                      <a target="_blank" href="https://facebook.com/">
+                        <i class="ri-facebook-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://twitter.com/">
+                        <i class="ri-twitter-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://linkedin.com/">
+                        <i class="ri-linkedin-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://instagram.com/">
+                        <i class="ri-pinterest-fill"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-text">
+          <p>
+            <i class="ri-copyright-line"></i>
+            <script
+              data-cfasync="false"
+              src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+            ></script>
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Atlanz Mobility. All Rights Reserved By
+            <a href="https://wictronix.com/" target="_blank">WictroniX</a>
+          </p>
+        </div>
+      </footer>
+    </div>
 
-<footer class="footer-wrap bg-rock">
-<div class="container">
-<img src="assets/img/footer-shape-1.png" alt="Image" class="footer-shape-one">
-<img src="assets/img/footer-shape-2.png" alt="Image" class="footer-shape-two">
-<div class="row pt-100 pb-75">
-<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-<div class="footer-widget">
-<a href="index.html" class="footer-logo">
-<img src="assets/img/logo-white.png" alt="Image">
-</a>
-<p class="comp-desc">
-Unlocking New Dimensions
-</p>
-<p class="comp-desc">
-Transforming transportation with intelligent solutions for enhanced efficiency, safety, and sustainability.
-</p>
-</div>
-</div>
-<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-<div class="footer-widget">
-<h3 class="footer-widget-title">Our Company</h3>
-<ul class="footer-menu list-style">
-<li>
-<a href="team.html">
-<i class="flaticon-next"></i>
-Company &amp; Team
-</a>
-</li>
-<li>
-<a href="service-one.html">
-<i class="flaticon-next"></i>
-Our Services
-</a>
-</li>
-<li>
-<a href="contact.html">
-<i class="flaticon-next"></i>
-Contact Us
-</a>
-</li>
-<li>
-<a href="privacy-policy.html">
-<i class="flaticon-next"></i>
-Privacy Policy
-</a>
-</li>
-</ul>
-</div>
-</div>
-<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-<div class="footer-widget">
-<h3 class="footer-widget-title">Support</h3>
-<ul class="footer-menu list-style">
-<li>
-<a href="faq.html">
-<i class="flaticon-next"></i>
-FAQ
-</a>
-</li>
-<li>
-<a href="terms-of-service.html">
-<i class="flaticon-next"></i>
-Terms
-</a>
-</li>
-<li>
-<a href="privacy-policy.html">
-<i class="flaticon-next"></i>
-Privacy
-</a>
-</li>
-</ul>
-</div>
-</div>
-<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-<div class="footer-widget">
-<h3 class="footer-widget-title">Contact Us</h3>
-<ul class="footer-menu list-style">
-<li>
-<a href="contact.html">
-<i class="flaticon-next"></i>
-Email Us: <a href="mailto:example@example.com">info@atlanz.com</a>
-</a>
-</li>
-</ul>
-<br>
-<div class="social-link">
-<ul class="social-profile list-style style1">
-<li>
-<a target="_blank" href="https://facebook.com/">
-<i class="ri-facebook-fill"></i>
-</a>
-</li>
-<li>
-<a target="_blank" href="https://twitter.com/">
-<i class="ri-twitter-fill"></i>
-</a>
-</li>
-<li>
-<a target="_blank" href="https://linkedin.com/">
-<i class="ri-linkedin-fill"></i>
-</a>
-</li>
-<li>
-<a target="_blank" href="https://instagram.com/">
-<i class="ri-pinterest-fill"></i>
-</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="copyright-text">
-<p> <i class="ri-copyright-line"></i><script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> Atlanz Mobility. All Rights Reserved By <a href="https://wictronix.com/" target="_blank">WictroniX</a></p>
-</div>
-</footer>
+    <a href="javascript:void(0)" class="back-to-top bounce"
+      ><i class="ri-arrow-up-s-line"></i
+    ></a>
 
-</div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/fancybox.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/tweenmax.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 
-
-<a href="javascript:void(0)" class="back-to-top bounce"><i class="ri-arrow-up-s-line"></i></a>
-
-
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/form-validator.min.js"></script>
-<script src="assets/js/contact-form-script.js"></script>
-<script src="assets/js/aos.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/odometer.min.js"></script>
-<script src="assets/js/fancybox.js"></script>
-<script src="assets/js/jquery.appear.js"></script>
-<script src="assets/js/tweenmax.min.js"></script>
-<script src="assets/js/main.js"></script>
-</body>
-
-<!-- Mirrored from templates.hibootstrap.com/raxa/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 31 Aug 2022 07:57:46 GMT -->
+  <!-- Mirrored from templates.hibootstrap.com/raxa/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 31 Aug 2022 07:57:46 GMT -->
 </html>
